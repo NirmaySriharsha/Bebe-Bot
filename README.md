@@ -5,7 +5,7 @@ This is Bebe, a standard issue cat:
 
 #Insert image of Bebe here
 
-Bebe lives in my flat, where she mostly just eats and sleeps. To capture these unique phenomena I set up a **Raspberry Pi (4) with a PiCamera (v3)** with **Tensorflow Image Detection** to automatically detect Bebe and take a picture when she moves into the frame. Then using *insert name*'s **whatsapp.js** service, this image is then sent via Whatsapp to our flat group chat, where my hard work and genius gets ignored: 
+Bebe lives in my flat, where she mostly just eats and sleeps. To capture these unique phenomena I set up a **Raspberry Pi (4) with a PiCamera (v3)** with **Tensorflow Image Detection** to automatically detect Bebe and take a picture when she moves into the frame. Then using *insert name*'s **whatsapp.js** service, this image is then sent via Whatsapp to our flat group chat, where my hard work and genius is immediately ignored in favor of my flatmates' inanites: 
 
 
 #Insert image of whatsapp bebebot
