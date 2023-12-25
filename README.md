@@ -3,19 +3,18 @@ Computer Vision + Raspberry Pi + Cats
 
 This is Bebe, a standard issue cat: 
 
-![Bebe (Average Housecat)](https://github.com/NirmaySriharsha/Bebe-Bot/assets/38062773/f5b46a3f-6b05-44c0-b643-7254f4b4c177)
-
-
-
+<img src = "https://github.com/NirmaySriharsha/Bebe-Bot/assets/38062773/f5b46a3f-6b05-44c0-b643-7254f4b4c177" width = "250" height = "250"/>
 
 Bebe lives in my flat, where she mostly just eats and sleeps. To capture these unique phenomena I set up a **Raspberry Pi (4) with a PiCamera (v3)** with **Tensorflow Image Detection** to automatically detect Bebe and take a picture when she moves into the frame. Then using [*pedroslopez*'s **whatsapp.js**](https://wwebjs.dev/) service, this image is then sent via Whatsapp to our flat group chat, where my hard work and genius is immediately ignored in favor of my flatmates' inanites: 
 
 
-#Insert image of whatsapp bebebot
+<img src = "https://github.com/NirmaySriharsha/Bebe-Bot/assets/38062773/a8758bc4-f615-4566-8480-09dfc5ea1d28" width = "250" height = "500"/>
+
 
 Finally, I 3D printed a fancy casing for Bebebot, and _voilia!_ Bebe-Bot is born: 
 
-#Insert image of Bebe-Bot
+"Insert image of bebebot with casing
+
 
 References: This project borrows and expands on [work by Evan Juras](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-on-the-Raspberry-Pi/tree/master), and uses existing services like [whatsapp-web.js](https://wwebjs.dev/), tensorflow, etc. The 3D printed Casing was an [open source model downloaded off of Thingiverse](https://www.thingiverse.com/thing:3914319) by SageTechTeacher. As you can see, I am not very original. 
 
@@ -125,7 +124,9 @@ You need a whatsapp account to actually send the pictures detected. This means y
 
 You can use your personal whatsapp if you prefer. Whatsapp only requires a phone number (not neccessarily an active one) to create an account, so I bought a 1$ sim card and set up a new whatsapp account solely for Bebe Bot: 
 
-#insert image of Bebe Bot whatsapp account
+<img src = "https://github.com/NirmaySriharsha/Bebe-Bot/assets/38062773/4a2c0e05-b510-4ef4-b599-2741a5f3f3ed" width = "250" height = "250"/>
+
+
 
 **Note on Privacy:** Whatever Whatsapp account you end up using, you will remain logged in on your Pi in order for the Whatsapp functionality to work. This means that if someone were to access your Pi, they would have access to this Whatsapp account and its chats. Keep your personal information and your Pi protected! 
 
