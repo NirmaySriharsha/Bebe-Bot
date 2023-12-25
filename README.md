@@ -3,7 +3,7 @@ Computer Vision + Raspberry Pi + Cats
 
 This is Bebe, a standard issue cat: 
 
-[Bebe (Average Housecat)](https://github.com/NirmaySriharsha/Bebe-Bot/assets/38062773/f5b46a3f-6b05-44c0-b643-7254f4b4c177)
+![Bebe (Average Housecat)](https://github.com/NirmaySriharsha/Bebe-Bot/assets/38062773/f5b46a3f-6b05-44c0-b643-7254f4b4c177)
 
 
 
