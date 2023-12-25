@@ -134,7 +134,7 @@ You will log into Whatsapp on the Pi by scanning a QR code (the same way you log
 
 ```npm i qrcode-terminal```
 
-**The first time you run the .js script, you will be prompted with a qr code to scan (with the account you intend to use to send the images of from). If all goes well you will receive a message "Client Is Ready!". You will not lead to log on in the future ([persistent auth is enabled](https://wwebjs.dev/guide/authentication.html#localauth-strategy)**.
+**The first time you run the .js script, you will be prompted with a qr code to scan (with the account you intend to use to send the images of from). If all goes well you will receive a message "Client Is Ready!". You will not lead to log on in the future ([persistent auth is enabled](https://wwebjs.dev/guide/authentication.html#localauth-strategy)).**
 
 
 #### Phew! And we're done with the set up!
