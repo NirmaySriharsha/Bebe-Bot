@@ -5,7 +5,7 @@ This is Bebe, a standard issue cat:
 
 <img src = "https://github.com/NirmaySriharsha/Bebe-Bot/assets/38062773/f5b46a3f-6b05-44c0-b643-7254f4b4c177" width = "250" height = "250"/>
 
-Bebe lives in my flat, where she mostly just eats and sleeps. To capture these unique phenomena I set up a **Raspberry Pi (4) with a PiCamera (v3)** with **Tensorflow Image Detection** to automatically detect Bebe and take a picture when she moves into the frame. Then using [*pedroslopez*'s **whatsapp.js**](https://wwebjs.dev/) service, this image is then sent via Whatsapp to our flat group chat, where my hard work and genius is immediately ignored in favor of my flatmates' inanites: 
+Bebe lives in my flat, where she mostly just eats and sleeps. To capture these unique phenomena I set up a **Raspberry Pi (4) with a PiCamera (v3)** with **Tensorflow Image Detection** to automatically detect Bebe and take a picture when she moves into the frame. Then using [*pedroslopez*'s **whatsapp.js**](https://wwebjs.dev/) service, this image is then sent via Whatsapp to our flat group chat, where my hard work and genius is immediately ignored in favor of my flatmates' inanities: 
 
 
 <img src = "https://github.com/NirmaySriharsha/Bebe-Bot/assets/38062773/a8758bc4-f615-4566-8480-09dfc5ea1d28" width = "250" height = "500"/>
