@@ -188,6 +188,11 @@ The .py script will detect cats, take a picture and store it in a folder ```Resu
 
 ```sh run_bebebot.sh```
 
+You may need to install ```screen``` first (allows us to open virtual terminal windows and run scripts in each of them): 
+
+```sudo apt-get install screen```
+
+
 In the future you can SSH into your Pi on your laptop or your Android phone (Termux for the win!) and run bebebot with a single command as soon as you log in!
 
 ## 5. The 3d print
