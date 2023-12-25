@@ -13,7 +13,7 @@ const qrcode = require('qrcode-terminal');
 const chokidar = require('chokidar');
 //Path to folder being watched
 const path = "./Results/output.png";
-const chat_name = '🤠232';
+const chat_name = 'insert_chat_name_here';
 const watcher = chokidar.watch(path, {
     persistent: true,
     awaitWriteFinish: true, //Waits till python is done writing the new image file.  
