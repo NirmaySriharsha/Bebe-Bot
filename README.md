@@ -220,8 +220,8 @@ If you wish to inspect each component separately first run
 
 which should give you an output like: 
 
+<img src = "https://github.com/NirmaySriharsha/Bebe-Bot/assets/38062773/07af510a-2724-46b8-8b92-46c711f1fc5d" width = "1000" height = "125"/>
 
-#Insert image of screen -d -r
 
 If you see one (or no) lines instead, this means that one (or both, resp.) of the components have failed. 
 
