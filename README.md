@@ -12,8 +12,8 @@ Bebe lives in my flat, where she mostly just eats and sleeps. To capture these u
 
 
 Finally, I 3D printed a fancy casing for Bebebot, and _voilia!_ Bebe-Bot is born: 
+<img src = "https://github.com/NirmaySriharsha/Bebe-Bot/assets/38062773/9029090d-96aa-4a7e-ac19-11e5800a4967" width = "500" height = "900"/>
 
-"Insert image of bebebot with casing
 
 
 References: This project borrows and expands on [work by Evan Juras](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-on-the-Raspberry-Pi/tree/master), and uses existing services like [whatsapp-web.js](https://wwebjs.dev/), tensorflow, etc. The 3D printed Casing was an [open source model downloaded off of Thingiverse](https://www.thingiverse.com/thing:3914319) by SageTechTeacher. As you can see, I am not very original. 
