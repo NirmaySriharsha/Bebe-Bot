@@ -1,5 +1,8 @@
 # Bebe-Bot
-Computer Vision + Raspberry Pi + Cats
+
+## Computer Vision + Raspberry Pi + Cats. 
+
+### Bebe-Bot is a homemade pet monitor that detects and sends images of your pet on Whatsapp throughout the day using Computer Vision running on a Raspberry Pi
 
 This is Bebe, a standard issue cat: 
 
