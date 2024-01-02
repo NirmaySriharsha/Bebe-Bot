@@ -151,6 +151,11 @@ This file has several parameters that can be tuned (through command line flags o
 
 #Insert image of visualization here
 
+<img src = "https://github.com/NirmaySriharsha/Bebe-Bot/assets/38062773/1acf86f1-99db-4f9b-b54d-a93691c2ae4e" width = "500" height = "500">
+
+As so. Image source:  [UiPath](https://www.uipath.com/blog/rpa/in-the-mind-of-algorithms-a-conversation-with-uipath)
+
+
 (b) **Confidence**: You can use the -c flag (or edit the script) to change how confident (on a scale of 0 to 1) the model has to be before capturing a picture. By default the confidence is 0.55 which has worked fine for me. Increase or decrease depending on results. 
 
 
