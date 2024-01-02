@@ -149,9 +149,8 @@ This file has several parameters that can be tuned (through command line flags o
 
 (a) **Visualize** the image detection process using the '-v' flag 
 
-#Insert image of visualization here
 
-<img src = "https://github.com/NirmaySriharsha/Bebe-Bot/assets/38062773/1acf86f1-99db-4f9b-b54d-a93691c2ae4e" width = "500" height = "500">
+<img src = "https://github.com/NirmaySriharsha/Bebe-Bot/assets/38062773/1acf86f1-99db-4f9b-b54d-a93691c2ae4e" width = "375" height = "250">
 
 As so. Image source:  [UiPath](https://www.uipath.com/blog/rpa/in-the-mind-of-algorithms-a-conversation-with-uipath)
 
