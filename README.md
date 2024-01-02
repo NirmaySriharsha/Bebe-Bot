@@ -38,7 +38,9 @@ By following these steps, you'll be even less original, but you'll have a workin
 
 It's always a good idea to update your system before undertaking a project
 
-```sudo apt-get upgrade```
+```
+sudo apt-get upgrade
+```
 
 We then install tensorflow and its associated dependencies for the image recognition component (if you have an older version of the Pi, it might be prudent to install tensorflow-lite for performance purposes). Run the following commands in the terminal:
 
@@ -71,11 +73,15 @@ git clone --depth 1 https://github.com/tensorflow/models.git
 
 Add the Tensorflow repository to the PYTHONPATH (basically ensuring our system knows where to find the tensorflow component when we run our python script). We'll have to change the .bashrc file for this: 
 
-```sudo nano ~/.bashrc```
+```
+sudo nano ~/.bashrc
+```
 
 This will open up a text editor inside the terminal. Move to the last line and add: 
 
-```export PYTHONPATH=$PYTHONPATH:/home/pi/tensorflow1/models/research:/home/pi/tensorflow1/models/research/slim```
+```
+export PYTHONPATH=$PYTHONPATH:/home/pi/tensorflow1/models/research:/home/pi/tensorflow1/models/research/slim
+```
 
 Save and exit the file (ctrl+X, then Y, then Enter). Close and reopen the terminal for these changes to set. 
 
@@ -100,17 +106,21 @@ And we're done with the python part of things.
 
 ### Node.js, Whatsapp-web.js and the Whatsapp Client
 
-Whatsapp is finnicky with no easy to use API forcing us to use an unnofficial javascript (🤮) client to send our cat images to our indiffernt flatmates. If your messaging service of choice is Telegram or Discord, you're in luck - their APIs are freely available and _much_ easier to use. Other alternatives (not neccessarily free) are Twilio and the Meta's API for Whatsapp. 
+Whatsapp is finnicky with no easy to use API forcing us to use an unnofficial javascript (🤮) client to send our cat images to our indifferent flatmates. If your messaging service of choice is Telegram or Discord, you're in luck - their APIs are freely available and _much_ easier to use. Other alternatives (not neccessarily free) are Twilio and Meta's API for Whatsapp. 
 
 You'll need to install node.js and npm as it does not come with the Pi - refer to instructions [here](https://www.instructables.com/Install-Nodejs-and-Npm-on-Raspberry-Pi/). For convenience I also recommend installing nodemon (```npm install -g nodemon```). 
 
 You'll also need chokidar - a file watcher service that serves as a (janky) bridge between our python and javascript components: 
 
-```npm install chokidar```
+```
+npm install chokidar
+```
 
 Finally, you will need to install whatsapp-web.js: 
 
-```npm i whatsapp-web.js```
+```
+npm i whatsapp-web.js
+```
 
 Install dependencies for running headless: 
 
@@ -135,7 +145,9 @@ You can use your personal whatsapp if you prefer. Whatsapp only requires a phone
 
 You will log into Whatsapp on the Pi by scanning a QR code (the same way you log into Whatsapp web on your computer). To display a QR code on your terminal you need to install qrcode-terminal:
 
-```npm i qrcode-terminal```
+```
+npm i qrcode-terminal
+```
 
 **The first time you run the .js script, you will be prompted with a qr code to scan (with the account you intend to use to send the images of from). If all goes well you will receive a message "Client Is Ready!". You will not lead to log on in the future ([persistent auth is enabled](https://wwebjs.dev/guide/authentication.html#localauth-strategy)).**
 
@@ -145,7 +157,11 @@ You will log into Whatsapp on the Pi by scanning a QR code (the same way you log
 ## 2. The python script
 
 
-```bebebot-detector.py``` runs out of the box. **Place this file in the Object Detection subfolder of the tensorflow repo you downloaded** - the path to this is: ```cd /home/pi/tensorflow1/models/research/object_detection```.
+```bebebot-detector.py``` runs out of the box. **Place this file in the Object Detection subfolder of the tensorflow repo you downloaded** - the path to this is: 
+
+```
+cd /home/pi/tensorflow1/models/research/object_detection
+```
 
 
 This file has several parameters that can be tuned (through command line flags or tinkering with the code itself): 
@@ -175,9 +191,9 @@ Play with it!
 
 ```bebebot-messager.js``` runs out of the box as well. **As stated, on the first run you will need to scan the QR code to log into Whatsapp on your Pi**. 
 
-You will need to edit the script to change the following: 
+**You will need to edit the script to change the following:**
 
-(a) Set the target chat name ```var target_chaht = <insert_chat_name_here>``` where you would like the images sent to. 
+(a) Set the target chat name ```var target_chat = <insert_chat_name_here>``` where you would like the images sent to. 
 
 (b) Captions - The list ```captions``` contains funny captions to attach to the image that gets sent out. If for some inexplicable reason my humor isn't to your tastes, feel free to add your own captions. 
 
@@ -193,18 +209,22 @@ The .py script will detect cats, take a picture and store it in a folder ```Resu
 
 ```run_bebebot.sh``` is a bash script that runs both of these scripts for your convenience. **Place this script in your home (~) folder and run it from the terminal using:**
 
-```sh run_bebebot.sh```
+```
+sh run_bebebot.sh
+```
 
 You may need to install ```screen``` first (allows us to open virtual terminal windows and run scripts in each of them): 
 
-```sudo apt-get install screen```
+```
+sudo apt-get install screen
+```
 
 
 In the future you can SSH into your Pi on your laptop or your Android phone (Termux for the win!) and run bebebot with a single command as soon as you log in!
 
 ## 5. The 3d print
 
-If you choose to house BebeBot in a worthy suit of armor, download the [model](lhttps://www.thingiverse.com/thing:3914319) and print it on your 3D printer of choice. In order to house my Pi4 and my PiCamera V3 snugly, I scaled down the model in every dimension to 67.32% - which required roughly 50g of PLA and ~3 hours of printing time on the Bambu X1 Carbon. 
+If you choose to house BebeBot in a worthy suit of armor, download the [model](https://www.thingiverse.com/thing:3914319) and print it on your 3D printer of choice. In order to house my Pi4 and my PiCamera V3 snugly, I scaled down the model in every dimension to 67.32% - which required roughly 50g of PLA and ~3 hours of printing time on the Bambu X1 Carbon. 
 
 The image detection and sending functionalities still works fine without a casing of course, but it won't look as cool. 
 
@@ -223,7 +243,9 @@ sh run_bebebot.sh
 
 If you wish to inspect each component separately first run 
 
-```screen -d -r```
+```
+screen -d -r
+```
 
 which should give you an output like: 
 
@@ -234,7 +256,9 @@ If you see one (or no) lines instead, this means that one (or both, resp.) of th
 
 Otherwise you can open the terminal running the respective script by running 
 
-```screen -d -r <screen-id>..bebebot```
+```
+screen -d -r <screen-id>..bebebot
+```
 
 which will take you to the terminal corresponding to that program. You can leave this and return to the original menu with ctrl+A, and then D! 
 
